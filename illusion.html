@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+<!-- 공통 사운드 -->
+<audio id="bgm" src="mewpot.mp3" loop></audio>
+<audio id="click-sound" src="click.mp3"></audio>
 
-  <!-- 홈 버튼 -->
+
+<div class="page-wrapper">
   <button class="home-btn" onclick="location.href='index.html'">HOME</button>
-
-  <!-- 뒤로가기 -->
   <button class="back-btn" onclick="location.href='index.html'">BACK</button>
 
   <div class="illusion-page">
@@ -39,5 +42,7 @@
   </div>
 
   <script src="illusion.js"></script>
+  <script src="sound.js"></script>
+</div>
 </body>
 </html>

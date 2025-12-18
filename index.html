@@ -4,52 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>시각디자인 놀이터</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-  <div class="home-container">
-    <h1>시각디자인 놀이터</h1>
-    <p>디자인을 쉽고 재미있게 즐겨보자!</p>
+<!-- 공통 사운드 -->
+<audio id="bgm" src="mewpot.mp3" loop></audio>
+<audio id="click-sound" src="click.mp3"></audio>
 
-    <div class="menu-buttons">
 
-      <div class="menu-item pink">
-        <button onclick="location.href='color-select.html'">
-          색상<br>맞춰보기
-        </button>
-        <p class="menu-desc">
-          컬러 휠을 움직여 제시된 색상을 맞춰보자!
-        </p>
+
+  <div class="page-wrapper">
+    <div class="home-container">
+      <h1>시각디자인 놀이터</h1>
+      <p>디자인을 쉽고 재미있게 즐겨보자!</p>
+
+      <div class="menu-buttons">
+
+        <div class="menu-item pink">
+          <button onclick="location.href='color-select.html'">
+            색상<br>맞춰보기
+          </button>
+          <p class="menu-desc">
+            컬러 휠을 움직여 제시된 색상을 맞춰보자!
+          </p>
+        </div>
+
+        <div class="menu-item yellow">
+          <button onclick="location.href='calibration.html'">
+            길이<br>맞춰보기
+          </button>
+          <p class="menu-desc">
+            모니터에 표시된 선분의 길이가 몇 cm인지 맞춰보자!
+          </p>
+        </div>
+
+        <div class="menu-item green">
+          <button onclick="location.href='path-gen.html'">
+            패스<br>생성하기
+          </button>
+          <p class="menu-desc">
+            수치를 조절해 다양한 모양의 패스를 생성해 보자!
+          </p>
+        </div>
+
+        <div class="menu-item blue">
+          <button onclick="location.href='illusion.html'">
+            착시<br>체험하기
+          </button>
+          <p class="menu-desc">
+            이미지를 움직이며 착시를 체험해 보자!
+          </p>
+        </div>
+
       </div>
-
-      <div class="menu-item yellow">
-        <button onclick="location.href='calibration.html'">
-          길이<br>맞춰보기
-        </button>
-        <p class="menu-desc">
-          모니터에 표시된 선분의 길이가 몇 cm인지 맞춰보자!
-        </p>
-      </div>
-
-      <div class="menu-item green">
-        <button onclick="location.href='path-gen.html'">
-          패스<br>생성하기
-        </button>
-        <p class="menu-desc">
-          수치를 조절해 다양한 모양의 패스를 생성해 보자!
-        </p>
-      </div>
-
-      <div class="menu-item blue">
-        <button onclick="location.href='illusion.html'">
-          착시<br>체험하기
-        </button>
-        <p class="menu-desc">
-          이미지를 움직이며 착시를 체험해 보자!
-        </p>
-      </div>
-
     </div>
-  </div>
+
+    <footer class="site-footer">
+      2025 Kim Min Ju all rights reserved / schoolbus8282@gmail.com / BGM by @mewpot
+    </footer>
+
+</div>
+<script src="sound.js"></script>
 </body>
 </html>
+

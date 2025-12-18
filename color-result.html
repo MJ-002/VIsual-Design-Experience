@@ -7,7 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <!-- 공통 사운드 -->
+<audio id="bgm" src="mewpot.mp3" loop></audio>
+<audio id="click-sound" src="click.mp3"></audio>
 
+
+  <div class="page-wrapper">
   <button class="home-btn" onclick="location.href='index.html'">HOME</button>
   <button class="back-btn" onclick="location.href='color-select.html'">BACK</button>
 
@@ -24,7 +29,7 @@
       다시 도전하기
     </button>
   </div>
-
+</div>
   <script>
     const data = JSON.parse(localStorage.getItem("quizResults"));
     const container = document.getElementById("resultsContainer");
@@ -46,6 +51,7 @@
     document.getElementById("finalScore").innerText =
       `최종 점수 : ${(total / 5).toFixed(1)}점`;
   </script>
+  <script src="sound.js"></script>
 
 </body>
 </html>

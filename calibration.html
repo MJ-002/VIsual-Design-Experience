@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <!-- 공통 사운드 -->
+<audio id="bgm" src="mewpot.mp3" loop></audio>
+<audio id="click-sound" src="click.mp3"></audio>
 
+  <div class="page-wrapper">   
   <button class="home-btn" onclick="location.href='index.html'">HOME</button>
   <button class="back-btn" onclick="location.href='index.html'">BACK</button>
 
@@ -27,7 +31,7 @@
   <br><br>
   <button id="saveBtn" class="size-btn">보정 완료</button>
 </div>
-
+</div>
 <script>
 const line = document.getElementById("calibration-line");
 const slider = document.getElementById("cal-slider");
@@ -44,6 +48,7 @@ document.getElementById("saveBtn").onclick = () => {
   window.location.href = "size-guess.html";
 };
 </script>
+<script src="sound.js"></script>
 
 </body>
 </html>
