@@ -6,7 +6,7 @@
   <title>색상 맞추기 모드 선택 | 시각디자인 훈련소</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="color-mode-bg">
 
   <button class="home-btn" onclick="location.href='index.html'">HOME</button>
 
@@ -14,9 +14,28 @@
     <h1>색상 맞추기</h1>
     <p>원하는 모드를 선택하세요.</p>
 
-    <div class="mode-buttons">
-      <button onclick="location.href='color-practice.html'">연습 모드</button>
-      <button onclick="location.href='color-quiz.html'">실전 모드</button>
+    <div class="menu-buttons">
+
+      <div class="menu-item">
+        <button class="menu-btn pink"
+          onclick="location.href='color-practice.html'">
+          연습 모드
+        </button>
+        <div class="menu-desc">
+          내가 원하는 만큼 제한없이 맞출 수 있어요.
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-btn pink"
+          onclick="location.href='color-quiz.html'">
+          실전 모드
+        </button>
+        <div class="menu-desc">
+          문제 5개를 풀면 오차율의 평균을 점수로 알려줘요.
+        </div>
+      </div>
+
     </div>
   </div>
 

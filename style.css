@@ -143,25 +143,31 @@ p {padding-top:15px; padding-bottom: 50px;}
 .menu-item {
   position: relative;
   text-align: center;
+  width: 250px; 
 }
 
 /* 버튼 기본 */
 .menu-item button {
-  width: 150px;
-  height: 150px;
+  width: 250px;  
+  height: 300px;
   border-radius: 24px;
   border: none;
-  font-size: 18px;
+
+  font-family: 'Aggravo', sans-serif; /* 변경 */
+  font-size: 2rem;                    /* 변경 */
   font-weight: 600;
+
   cursor: pointer;
   color: #222;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+
 /* 호버 시 살짝 튀어나오기 */
 .menu-item button:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  color:white
 }
 
 /* 설명 텍스트 */
@@ -200,6 +206,53 @@ p {padding-top:15px; padding-bottom: 50px;}
 .menu-item.blue button {
   background: #a7d8ff;
 }
+
+
+
+.menu-btn {
+  width: 250px;
+  height: 150px;
+  border-radius: 24px;
+  border: none;
+
+  font-family: 'Aggravo', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  background: #fff;
+  color: #222;
+
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.menu-btn.pink {
+  background: #fdd7df;
+}
+
+.menu-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.menu-desc {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #444;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: 0.25s ease;
+}
+
+.menu-item:hover .menu-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 
 /* ------------------------------ */
 /* 🎮 색상 맞추기 모드 선택 페이지 */
