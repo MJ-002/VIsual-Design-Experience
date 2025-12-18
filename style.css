@@ -135,22 +135,71 @@ p {padding-top:15px; padding-bottom: 50px;}
 
 .menu-buttons {
   display: flex;
+  gap: 24px;
   justify-content: center;
-  gap: 20px;
-  padding: 30px;}
+  margin-top: 40px;
+}
 
-.menu-buttons button {
+.menu-item {
+  position: relative;
+  text-align: center;
+}
+
+/* 버튼 기본 */
+.menu-item button {
+  width: 150px;
+  height: 150px;
+  border-radius: 24px;
   border: none;
-  border-radius: 20px;
-  width: 300px;
-  padding-top: 100px; padding-bottom: 100px;
-  font-family: Aggravo; font-size: 2.5rem;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;}
+  color: #222;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-.menu-buttons button:hover {
-  background-color: #222;
-  color: white;}
+/* 호버 시 살짝 튀어나오기 */
+.menu-item button:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* 설명 텍스트 */
+.menu-desc {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: 0.25s ease;
+  pointer-events: none;
+}
+
+/* 버튼에 호버하면 설명 표시 */
+.menu-item:hover .menu-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------------------------
+   버튼 색상
+--------------------------- */
+
+.menu-item.pink button {
+  background: #ffb3c7;
+}
+
+.menu-item.yellow button {
+  background: #ffe066;
+}
+
+.menu-item.green button {
+  background: #b7f0ad;
+}
+
+.menu-item.blue button {
+  background: #a7d8ff;
+}
 
 /* ------------------------------ */
 /* 🎮 색상 맞추기 모드 선택 페이지 */
