@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>길이 맞춰보기 | 시각디자인 훈련소</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="home-btn" onclick="location.href='index.html'">HOME</button>
+  <button class="back-btn" onclick="location.href='index.html'">BACK</button>
+
+<div class="mode-page">
+  <h1>화면 보정하기</h1>
+  <p style="padding-bottom:100px">아래의 선이 실제 자로 5cm가 되도록 길이를 조절해주세요.</p>
+
+  <div id="calibration-line" style="
+    height: 4px; 
+    background:#000; 
+    width: 200px;
+    margin-top:40px;
+    margin:auto;">
+    </div>
+
+  <input type="range" id="cal-slider" min="50" max="800" value="200" style="width:400px;margin-top:100px">
+
+  <button id="saveBtn">보정 완료</button>
+</div>
+
+<script>
+const line = document.getElementById("calibration-line");
+const slider = document.getElementById("cal-slider");
+
+slider.oninput = () => {
+  line.style.width = slider.value + "px";
+};
+
+document.getElementById("saveBtn").onclick = () => {
+  const px = Number(slider.value);  // 5cm가 px 픽셀임
+  const pxPerCm = px / 5;
+  localStorage.setItem("pxPerCm", pxPerCm);
+  alert("보정 완료! pxPerCm = " + pxPerCm);
+  window.location.href = "size-guess.html";
+};
+</script>
+
+</body>
+</html>

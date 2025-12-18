@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>길이 맞춰보기 | 시각디자인 훈련소</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="home-btn" onclick="location.href='index.html'">HOME</button>
+  <button class="back-btn" onclick="location.href='calibration.html'">BACK</button>
+
+  <div class="mode-page">
+  <div class="size-container">
+      <section id="quiz-area">
+          <h1>길이 맞춰보기</h1>
+          <p>빨간색 선은 1cm입니다. 검은색 선은 몇 cm인지 맞춰보세요.<br>(소수점 1번째 자리까지)</p>
+
+          <div id="line-area" class="size-red-area">
+              <div id="cm-line" class="size-line size-line-cm"></div>
+          </div>
+
+          <div id="line-area" class="size-line-area">
+              <div id="quiz-line" class="size-line size-line-quiz"></div>
+              <div id="user-line" class="size-line size-line-user size-hidden"></div>
+          </div>
+
+          <div id="controls" class="size-controls">
+              <p style="padding-bottom: 20px;">이 선의 길이는 몇 cm일까요?</p>
+              <input id="user-input" type="number" step="0.1" placeholder="예: 12.3">
+              <br>
+              <button class="size-btn" onclick="submitInput()">정답 제출</button>
+              <button class="size-btn" onclick="generateProblem()">다시하기</button>
+          </div>
+
+          <p id="result"></p>
+      </section>
+  </div>
+  </div>
+
+<script src="size-guess.js"></script>
+
+</body>
+</html>

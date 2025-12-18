@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실전 모드 | 색상 맞추기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="home-btn" onclick="location.href='index.html'">HOME</button>
+  <button class="back-btn" onclick="location.href='color-select.html'">BACK</button>
+
+  <div class="color-page">
+    <div class="quiz-status" id="quizStatus">1 / 5</div>
+
+    <h2>색상 맞추기 실전 모드</h2>
+
+    <div class="sample-section">
+      <div class="label">제시된 색</div>
+      <div class="sample-color" id="sampleColor"></div>
+    </div>
+
+    <div class="select-section">
+      <div class="label">내가 선택한 색</div>
+      <div class="user-color" id="userColor"></div>
+      <input type="color" id="colorPicker">
+    </div>
+
+    <div class="result-section">
+      <button id="checkResult">결과 확인</button>
+      <button id="nextBtn" style="display:none;">다음 문제</button>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <script src="color-quiz.js"></script>
+</body>
+</html>

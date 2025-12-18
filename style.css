@@ -1,0 +1,620 @@
+
+/*폰트 설정*/
+
+@font-face {
+    font-family: 'Aggravo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Aggravo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Aggravo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;}
+
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;}
+
+
+html
+    {font-family: 'Paperozi';
+    font-weight: 500;
+    line-height: 1.2;
+    word-break: keep-all;
+    text-align: center;}
+
+h1 {font-size:2.7rem; font-family: 'Aggravo'}
+h2 {font-size:2rem;font-family: 'Aggravo'}
+h3 {font-size:1.6rem;}
+h4 {font-size:1.4rem;}
+h5 {font-size:1.2rem; line-height: 1.5;}
+p  {line-height: 1.5; font-size:1.2rem;}
+
+
+/* 여백, 기본간격 초기화 */
+  html, body, h1, h2, h3, h4, h5, p, ol, ul
+  {margin: 0; padding: 0; box-sizing: border-box;}
+
+p {padding-top:15px; padding-bottom: 50px;}
+
+/* .size-container {
+    max-width: 640px;
+    margin: 0 auto;
+}*/
+
+/* ------------------------------ */
+/* 🏠 공통 : 홈 버튼 */
+/* ------------------------------ */
+.home-btn {
+  position: fixed; top: 20px; left: 20px;
+  background: #ddd;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s;
+  width:90px;}
+.home-btn:hover {background: #ccc;}
+
+.back-btn {
+  position: fixed; top: 20px; left: 120px;
+  background: #ddd;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s;
+  width:90px;}
+.back-btn:hover {background: #ccc;}
+
+/* ------------------------------ */
+/* 📌 홈 화면(index.html) */
+/* ------------------------------ */
+
+.home-container {margin-top: 150px;}
+
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;}
+
+.menu-buttons button {
+  border: none;
+  border-radius: 20px;
+  width: 300px;
+  padding-top: 100px; padding-bottom: 100px;
+  font-family: Aggravo; font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;}
+
+.menu-buttons button:hover {
+  background-color: #222;
+  color: white;}
+
+/* ------------------------------ */
+/* 🎮 색상 맞추기 모드 선택 페이지 */
+/* ------------------------------ */
+.mode-page {margin-top: 150px;}
+
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;}
+
+.mode-buttons button {
+  width: 300px;
+  padding-top: 100px; padding-bottom: 100px;
+   font-family: Aggravo; font-size: 2rem;
+  border-radius: 20px;
+  border: none;
+  background: #fdc3c3;
+  color: #222;
+  cursor: pointer;
+  transition: 0.2s;}
+
+.mode-buttons button:hover {
+  background: #444;
+  color: white;}
+
+/* ------------------------------ */
+/* 🎨 색상 맞추기 페이지 (연습/실전 공통) */
+/* ------------------------------ */
+
+.color-page {
+  text-align: center;
+  background-color: white;
+  padding: 40px;
+  max-width: 600px;
+  margin: 80px auto;
+  position: relative;
+}
+
+.color-page h2 {
+  margin-bottom: 30px;
+}
+
+/* ------------------------------ */
+/* 🎯 실전 모드 문제 번호 표시 */
+/* ------------------------------ */
+.quiz-status {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* ------------------------------ */
+/* 🎨 제시된 색 */
+/* ------------------------------ */
+.sample-section {
+  margin-bottom: 30px;}
+
+.label {
+  font-size: 0.9rem;
+  padding-top: 40px;
+  padding-bottom:10px;
+  color: #444;}
+
+.sample-color {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  margin: 0 auto 12px;}
+
+#changeColorBtn {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.9rem;}
+#changeColorBtn:hover {
+  background-color: #ddd;}
+
+/* ------------------------------ */
+/* 🎛 내 색상 선택 */
+/* ------------------------------ */
+.select-section {
+  margin-bottom: 40px;}
+
+#colorPicker {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* ------------------------------ */
+/* ✔ 결과 확인 */
+/* ------------------------------ */
+
+#checkResult, #nextBtn {
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width:110px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#checkResult:hover, #nextBtn:hover {
+  background-color: #444;}
+
+#retryBtn {
+  background:#222; 
+  color:white;
+  border: none;
+  font-size:1rem;
+  padding:10px 18px; 
+  width:110px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#retryBtn:hover {
+  background: #333;}
+
+#resultText {
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 30px}
+
+/* ------------------------------ */
+/* 🏁 실전 모드 결과 페이지 */
+/* ------------------------------ */
+.result-page {
+  margin: 80px auto;
+  padding: 40px;
+  max-width: 700px;}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 15px 0;
+  justify-content: center;}
+
+.color-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid #ccc;}
+
+#finalScore {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;}
+
+
+
+/* ------------------------------ */
+/* 착시 페이지 */
+/* ------------------------------ */
+.illusion-page {
+  margin-top: 150px;
+  margin: 80px auto;
+  padding: 80px;
+  max-width: 1500px;}
+
+/* 그리드 → 완전한 정렬 대신 “자유 배치 느낌” */
+.illusion-grid {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  padding: 20px;
+  perspective: 800px;
+}
+
+/* 썸네일*/
+.illusion-thumb {
+  width: 260px;
+  height: calc(260px / 1.294);
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  cursor: pointer;
+
+  animation: float3d 4.5s ease-in-out infinite;
+  animation-delay: var(--delay);
+
+  transform:
+    translate(var(--tx), var(--ty))
+    rotate(var(--rot))
+    translateZ(0);
+}
+
+.illusion-thumb:hover {
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.08);
+  z-index: 10;
+}
+
+/* 둥둥 떠다니기 */
+@keyframes float3d {
+  0% {
+    transform:
+      translate(var(--tx), var(--ty))
+      rotate(var(--rot))
+      translateZ(0);
+  }
+  50% {
+    transform:
+      translate(
+        calc(var(--tx) + 5px),
+        calc(var(--ty) - 6px)
+      )
+      rotate(var(--rot))
+      translateZ(10px);
+  }
+  100% {
+    transform:
+      translate(var(--tx), var(--ty))
+      rotate(var(--rot))
+      translateZ(0);
+  }
+}
+
+/* 모달 전체 */
+.illusion-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;}
+
+.modal-content {
+  padding: 30px;
+  position: relative;
+  width: 1000px;
+  text-align: center;}
+
+/* 이미지 영역 더 크게*/
+.illusion-view {
+  position: relative;
+  width: 1100px;
+  height: 850px;
+  margin: 0 auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #f4f4f4;}
+
+/* 아래 이미지 */
+.bottom-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;}
+
+/* 위 이미지 */
+.top-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-100%);  
+  transition: transform 0.1s linear;}
+
+#slider {
+  width: 1100px;
+  margin-top: 20px;}
+
+
+
+/* ------------------------------------- */
+/* 패스 생성하기 페이지 전용 스타일 */
+/* ------------------------------------- */
+.pathgen-container {
+
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 150px;}
+
+svg {padding-bottom: 40px; overflow: visible;}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.controls input,
+.controls select {
+  margin-top: 4px;
+}
+
+/* 컬러 인풋 커스텀 */
+.controls input[type="color"] {
+  width: 800px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  border-radius: 4px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+}
+
+.controls input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.controls input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+
+
+.btns {
+  grid-column: span 2;
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btns button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ------------------------------------- */
+/* 길이 가늠하기 페이지*/
+/* ------------------------------------- */
+
+.size-card {
+    background: #fff;
+    padding: 40px 32px;
+    text-align: center;
+}
+
+.size-hidden { display: none; }
+
+.size-desc {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+/* 버튼 */
+
+.size-btn-group {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.size-btn {
+    padding: 12px 20px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.size-btn:hover {
+    background: #444;
+}
+
+/* 문제 영역 */
+.size-red-area {
+    position: relative;
+    width: 800px;
+    height: 50px;
+    margin: 30px auto;
+}
+
+.size-line-area {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 30px auto;
+}
+
+/* 모든 선 공통 */
+.size-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center center;   /* 🔥 핵심 수정 */
+}
+
+/* 1cm 기준선 */
+.size-line-cm {
+    background: #ff3b30;
+    height: 3px;
+}
+
+/* 문제 선 */
+.size-line-quiz {
+    background: #333;
+    top: 200px;}
+
+.size-line-drag {
+    background: #007aff;
+    cursor: ew-resize;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.size-line-user {
+    background: #52d0fe;          /* 파란색 */
+    opacity: 0.7;
+    top: 200px;                   /* 문제 선과 같은 높이 */
+}
+
+/* 입력 영역 */
+
+.size-controls {
+    margin-top: 20px;
+}
+
+.size-controls input[type="number"] {
+    padding: 10px 12px;
+    width: 140px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    margin-bottom: 12px;
+}
+
+/* 결과 텍스트 */
+
+.size-result {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 16px;
+}

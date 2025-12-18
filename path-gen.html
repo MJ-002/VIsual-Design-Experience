@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>패스 생성하기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<button class="home-btn" onclick="location.href='index.html'">HOME</button>
+
+<div class="pathgen-container">
+
+  <h1>패스 생성기</h1>
+  <p>파형을 조절해 다양한 원형 패스를 만들어보세요.</p>
+
+  <!-- SVG 영역 -->
+  <svg id="svg" width="800" height="800" viewBox="0 0 800 800">
+    <path id="path"
+      fill="none"
+      stroke="#000"
+      stroke-width="4"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+  </svg>
+
+  <!-- 컨트롤 -->
+  <div class="controls">
+
+    <label>반지름
+      <input type="range" id="baseRadius" min="10" max="300" value="120">
+    </label>
+
+    <label>파형 높이 (삐죽함)
+      <input type="range" id="amplitude" min="0" max="120" value="40">
+    </label>
+
+    <label>주기 수
+      <input type="range" id="frequency" min="1" max="40" value="12">
+    </label>
+
+    <label>부드러움
+      <input type="range" id="samples" min="50" max="500" value="240">
+    </label>
+
+    <label>파형 종류
+      <select id="waveType">
+        <option value="sine">사인</option>
+        <option value="triangle">삼각</option>
+        <option value="saw">톱니</option>
+      </select>
+    </label>
+
+    <label>선 두께
+      <input type="range" id="strokeWidth" min="1" max="12" value="4">
+    </label>
+
+    <div class="btns">
+        <label>색상
+          <input type="color" id="color" value="#000000" >
+        </label>
+    </div>
+
+    <div class="btns" style="padding-bottom: 100px;">
+      <button onclick="randomize()">랜덤 생성</button>
+      <button onclick="saveSVG()">SVG 저장</button>
+      <button onclick="savePNG()">PNG 저장</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="path-gen.js"></script>
+</body>
+</html>
